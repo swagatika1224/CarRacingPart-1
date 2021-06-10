@@ -88,3 +88,45 @@ function my_keydown(e)
 			console.log("key d");
 		}
 }
+
+
+
+function car1_up() {
+if(car1_y >=0) {
+car1_y = car1_y - 10;
+console.log("When up arrow is pressed, x = " + car1_x + " | y = " +car1_y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+    }
+}
+
+function car1_down() {
+if(car1_y <=500) {
+car1_y =car1_y+ 10;
+console.log("When down arrow is pressed, x = " + car1_x + " | y = " +car1_y);
+uploadBackground();
+uploadcar1();
+uploadcar2();
+    }
+}
+
+function car1_left() {
+	if(car1_x >= 0) {
+	car1_x =car1_x - 10;
+	console.log("When left arrow is pressed, x = " + car1_x + " | y = " +car1_y);
+	uploadBackground();
+	uploadcar1();
+	uploadcar2();
+	}
+}
+
+function car1_right() {
+if(car1_x >= 0) {
+car1_x =car1_x - 10;
+console.log("When right arrow is pressed, x = " + car1_x + " | y = " +car1_y);
+uploadBackground();
+uploadcar1();
+uploadcar2
+    }
+}
